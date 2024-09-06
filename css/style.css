@@ -1,0 +1,468 @@
+:root {
+    --primaryColor : #074643;
+    --secondaryColor : #577d7c;
+    --btnColor : #aba9c7;
+    --darkColor : black;
+    --lightColor : white;
+}
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+
+*::selection {
+    color:var(--lightColor);
+    background-color:rgba(0, 0, 0, 0.664);
+}
+
+body {
+    font-family: sans-serif;
+}
+
+#hero-section {
+    min-height: 90vh;
+    background-image : linear-gradient(360deg,var(--primaryColor) ,var(--primaryColor), black);
+    display:flex;
+    align-items: center;
+}
+
+.navbar {
+    position:sticky;
+    top:0;
+    background-color:var(--secondaryColor);
+    padding:0;
+    z-index:99999;
+}
+
+.navbar-brand img{
+    width:55px;
+    
+}
+
+
+.nav-link {
+    font-family: "Ubuntu",sans-serif;
+    color:var(--lightColor);
+    font-size: 20px;
+    padding: 5px 0px;
+    margin: 0 10px;
+    transition: border-bottom 0.2s ease-in-out;
+    
+    
+    
+}
+.nav-link:hover {
+    padding-bottom:2px;
+    color:var(--darkColor);
+    border-bottom:3px solid var(--btnColor);
+
+
+
+}
+
+
+.download-btn {
+    background:none;
+    color:black;
+    border:2px solid var(--btnColor);
+    border-radius: 20px;
+    font-weight:bold;
+    text-transform: uppercase;
+    padding:10px 20px;
+    transition: all 0.2s ease-in-out;
+}
+ .download-btn i {
+    font-size: 20px;
+}
+
+.download-btn:hover {
+
+    background-color:var(--btnColor);
+
+}
+
+.buttons {
+    display:flex;
+
+}
+
+.nav-menu {
+    background:none;
+    border:none;
+    font-size: 30px;
+    display:none;
+}
+
+.offcanvas {
+    z-index: 9999999;
+}
+
+.offcanvas-header {
+    background-color:var(--secondaryColor);
+
+}
+.offcanvas-header img{
+    width:50px;
+}
+
+
+.offcanvas-body {
+
+    padding:0;
+}
+.offcanvas-body .nav-link{
+    font-family: "Ubuntu",sans-serif;
+    color:var(--darkColor);
+    font-size: 20px;
+    padding: 10px 0px;
+    padding-left: 30px;
+    margin:0;
+    transition: all 0.1s ease-in-out;
+
+
+}
+.offcanvas-body .nav-link:hover{
+    background-color:var(--btnColor);
+    border-bottom:none;
+
+
+}
+
+#profile-pic {
+    position:relative;
+    display:flex;
+    justify-content: flex-end;
+
+}
+
+#hero-img  {
+    display:flex;
+    width:450px;
+    height:450px;
+    border-radius: 50%;
+    background-image: linear-gradient(90deg,rgba(0, 0, 0, 0.781),#577d7c,#577d7c,rgba(0, 0, 0, 0.781));
+    overflow:hidden;
+    align-self: center;
+    
+}
+
+#hero-img  img{
+    width:450px;
+    height:450px;
+    object-fit: contain;
+    transition:all 0.5s ease-in-out;
+    border-radius: 50%;
+    
+    
+}
+
+#hero-img img:hover {
+    transform: scale(1.1);
+
+}
+  .badge{
+    position:absolute;
+    top:40%;
+    left:5%;
+    background-color: var(--lightColor);
+    border-radius: 20px;
+    padding:0px 35px;
+    z-index:99;
+
+}
+#main-section .child-h{
+    color:var(--darkColor);
+    padding:0;
+    margin:0;
+    font-weight: bold;
+
+}
+
+ .badge p{
+    text-align: center;
+    color:var(--darkColor);
+    font-size: 24px;
+    font-weight: bold; 
+    line-height: 30px;
+
+
+
+}
+
+#main-section {
+    min-height: 85vh;
+    align-items: center;
+    justify-content: space-between;
+}
+#main-section h1{
+    color:var(--lightColor);
+    font-size: 55px;
+    padding-bottom:15px;
+}
+#main-section h2{
+    color:var(--lightColor);
+    font-weight: bold;
+    font-size: 65px;
+    padding-bottom:15px;
+}
+#main-section .hero-p{
+    color:var(--lightColor);
+    font-size: 30px;
+    line-height: 37px;
+    padding-bottom:15px;
+}
+#main-section .btn1{
+    background-image: linear-gradient(90deg,rgba(0, 0, 0, 0.781),#577d7c);
+    padding: 10px 20px;
+    border:none;
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: all 0.5s ease;
+}
+#main-section .btn1:hover{
+    background-image: linear-gradient(360deg,rgba(0, 0, 0, 0.781),#577d7c);
+
+}
+#main-section .btn2{
+    background:none;
+    margin-left:20px;
+    padding: 5px 0;
+    border:none;
+    font-weight: bold;
+    transition:all 0.2s ease;
+}
+#main-section .btn2 i{
+    padding-right:5px;
+    color:rgb(0, 170, 0);
+}
+#main-section .btn2:hover{
+    color:gray;
+}
+#main-section .btn2:hover i{
+    color:rgba(170, 167, 0, 0.753);
+}
+
+#about-section {
+    min-height:70vh;
+    display:flex;
+    align-items:center;
+}
+
+#about-section h2{
+    color:var(--darkColor);
+    font-weight: bold;
+    font-size: 48px;
+    
+}
+
+#about-section .about-p{
+    color:var(--darkColor);
+    font-size: 28px;
+    margin-bottom:100px;
+    
+}
+#about-section p{
+    color:var(--darkColor);
+    font-size: 20px;
+    text-align: justify;
+    
+}
+
+#about-section .signature{
+    margin-left:100px;
+    font-family: "Grey Qo", cursive;
+    color:var(--darkColor);
+    font-size: 90px;
+    line-height: 70px;
+    
+    
+}
+#about-section .signature span{
+    margin-left:60px;
+    
+    
+}
+
+.download-btn2 {
+    background-color:var(--primaryColor);
+    color:var(--lightColor);
+    border:2px solid var(--primaryColor);
+    border-radius: 20px;
+    font-weight:bold;
+    text-transform: uppercase;
+    padding:10px 20px;
+    transition: all 0.2s ease-in-out;
+    margin-right:30px;
+}
+.download-btn2 i {
+    font-size: 20px;
+}
+
+.download-btn2:hover {
+    
+    background-color:#021d1b;
+    border:2px solid #021d1b;
+
+}
+
+#about-section a{
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding:10px;
+    border:1px solid var(--primaryColor);
+    border-radius: 50%;
+    margin-right:5px;
+    
+    
+    
+}
+
+#about-section #twitter {
+    background-color:rgb(17, 175, 238);
+    transition: all 0.2s ease-in-out;
+}
+
+#about-section #twitter:hover {
+    background-color:rgb(17, 175, 238,0.8);
+}
+
+#about-section #instagram {
+    background-color:rgb(221, 48, 25);
+    transition: all 0.2s ease-in-out;
+    
+}
+#about-section #instagram:hover {
+    background-color:rgb(221, 48, 25,0.8);
+    
+}
+
+#about-section #facebook {
+    background-color:rgb(10, 10, 248);
+    transition: all 0.2s ease-in-out;
+
+}
+#about-section #facebook:hover {
+    background-color:rgb(10, 10, 248,0.8);
+
+}
+
+#about-section .fa-twitter , .fa-facebook , .fa-instagram{
+    font-size: 25px;
+    color:var(--lightColor);
+    
+}
+
+
+#info-section {
+    min-height: 80vh;
+
+}
+#info-section .row{
+    display:flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+
+#info-section .child{
+    width:100%;
+    padding: 20px 30px;
+    color:var(--darkColor);
+    font-size:18px;
+    font-weight: bold;
+    
+}
+#per-info .border-child{
+    border:2px solid var(--darkColor);
+    border-radius: 35px;
+    
+}
+#per-info .border-child:hover{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.795), var(--secondaryColor)  );
+    
+    
+}
+
+#info-section .main{
+    min-height:100%;
+    border:5px solid var(--btnColor);
+    border-radius: 20px;
+    display:grid ;
+    justify-content: center;
+    grid-template-columns: 47% 47%;
+    gap:20px;
+    padding:20px 10px;
+    text-align: center;
+
+}
+#info-section .sub{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    border:10px solid var(--primaryColor);
+    border-radius: 40px;
+
+}
+
+#info-section .sub:hover{
+    background-image: linear-gradient(var(--secondaryColor), rgba(0, 0, 0, 0.795)  );
+}
+
+
+#info-section .sub h2{
+    color:var(--darkColor);
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#info-section .sub p{
+    color:var(--darkColor);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:992px) {
+
+    .container .navbar-nav {
+        display:none;
+    }
+
+    .download-btn {
+
+        margin-right:20px;
+    
+    } 
+
+    .nav-menu {
+        
+        display:block;
+
+    }
+    
+}
+
